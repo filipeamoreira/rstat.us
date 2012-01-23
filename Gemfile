@@ -34,6 +34,9 @@ gem "tzinfo"
 gem "rsa"
 gem "exceptional"
 gem "newrelic_rpm"
+gem "execjs"
+gem "pg"
+gem "heroku"
 
 # background job queue
 gem "delayed_job", :git => "git://github.com/collectiveidea/delayed_job.git", :tag => "v2.1.4"
@@ -57,8 +60,4 @@ end
 
 group :test do
   gem "webmock"
-end
-
-group :production do
-  gem "pg"
 end
