@@ -51,6 +51,8 @@ group :development, :test do
   gem "vcr"
   gem "simplecov", "~> 0.4.0", :require => false
   gem "launchy"
+  gem "foreman"
+  gem "pry"
 end
 
 group :test do

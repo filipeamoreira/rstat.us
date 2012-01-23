@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+stocks = []
+stocks << {:symbol => "goog", :name => "Google Inc."}
+stocks << {:symbol => "yhoo", :name => "Yahoo Inc."}
+stocks << {:symbol => "ibm", :name => "IBM"}
+stocks << {:symbol => "appl", :name => "Apple Inc."}
+stocks.each do |stock|
+  stock = Stock.create!(:symbol => stock[:symbol], :name => stock[:name])
+end
+

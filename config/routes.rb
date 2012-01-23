@@ -57,4 +57,7 @@ RstatUs::Application.routes.draw do
   resources :subscriptions, :except => [:update]
   match 'subscriptions/:id.atom', :to => "subscriptions#post_update", :via => :post
   match 'subscriptions/:id.atom', :to => "subscriptions#show", :via => :get
+
+  # Stocks
+  resources :stocks
 end

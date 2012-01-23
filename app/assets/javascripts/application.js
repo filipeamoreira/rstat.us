@@ -5,5 +5,5 @@
 // the compiled file.
 //
 //= require "./jquery-1.5.2.min.js"
+//= require underscore-min.js
 //= require_tree .
-
