@@ -58,3 +58,7 @@ end
 group :test do
   gem "webmock"
 end
+
+group :production do
+  gem "pg"
+end
